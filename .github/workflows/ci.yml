@@ -21,13 +21,13 @@ jobs:
 
         - name: install dependencies
           run: |
-            cd chapter 4
+            cd chapter4
             python -m pip install --upgrade pip
             if [ -f requirments.txt ]; then pip install -r requirments.txt; fi
 
         - name: run tests
           run: |
-            cd chapter 4
+            cd chapter4
             python -m unittest discover
 
         - name: notify us of success
